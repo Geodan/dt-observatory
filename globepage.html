@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>The Urban Digital Twins Observatory</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <!-- Replace your_access_token with your Mapbox access token -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+  <style>
+    body { margin:0; padding:0; }
+    #map { position:absolute; top:0; bottom:0; width:100%; }
+    .mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+    .mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+
+    /* Style the menu bar */
+    /* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set body font and background color */
+body {
+  font-family: sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Create a responsive grid layout */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid > * {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .grid > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid > * {
+    width: 33.3333%;
+  }
+}
+
+/* Style the header and navigation */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #0af;
+}
+
+/* Style the main content */
+main {
+  padding: 20px;
+}
+
+/* Style the footer */
+footer {
+  display: flex;
+  bottom: 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Add hover effects to buttons */
+button {
+  background-color: #0af;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1em;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #00f;
+}
+
+/* Add responsive design styles */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+header img {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+}
+
+#map {
+    width: 100%; /* Make the map fill the container */
+    height: 100%;
+    top: 80px;
+    bottom: 50px;
+}
+
+
+
+
+
+  </style>
+</head>
+<body>
+    <header>
+        <!-- img src="logo.png" alt="Urban Digital Twin Observatory Logo"> -->
+          <h1>The Urban Digital Twin Observatory</h1>
+          <nav>
+            <ul>
+              <li><a href="homepage.html#about">About</a></li>
+              <li><a href="homepage.html#guide">Guide</a></li>
+              <li><a href="homepage.html#initiatives">Initiatives</a></li>
+              <li><a href="globepage.html">Globe</a></li>
+              <li><a href="homepage.html#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <main>
+            <div id='map'></div>
+              </div>
+          </main>
+          <footer>
+            <!-- Add footer content here -->
+            
+          </footer>
+        </body>
+      </html>
+
+
+ 
+
+
+
+  <script>
+
+    // Initialize the map with your access token and any other options you want to set
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYnJ1bm9hdmlsYTUiLCJhIjoiY2xjaG8wYXdrMDc1cjNwcGc0eHFzMzFjNCJ9.-9d_9l2VbCQYaBc81rGhFA';
+    var map = new mapboxgl.Map({
+      container: 'map', // container id
+      style: 'mapbox://styles/brunoavila5/clchoqkp7000215p105biswev', // style URL
+      center: [-25, 20], // starting position [lng, lat]
+      zoom: 2 // starting zoom
+    });
+
+    
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl());
+
+  </script>
+</body>
+</html>
