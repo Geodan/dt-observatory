@@ -1,31 +1,169 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><META http-equiv="Content-Type" content="text/html; charset=utf-8"><style>body{font-family:sans-serif;background-color:rgb(49,49,49);color:#fff}.m_grid{display:flex}.m_grid>*{width:100%}@media (min-width:600px){.m_grid>*{width:50%}}@media (min-width:900px){.m_grid>*{width:33.3333%}}header{display:flex;padding:20px;background-color:rgb(0,0,0)}header h1{margin:0;font-size:2em;text-transform:uppercase;letter-spacing:2px}nav ul{display:flex;list-style:none}nav li{margin:0 10px}nav a{color:#fff;text-decoration:none;font-weight:bold;text-transform:uppercase;letter-spacing:1px}nav a:hover{color:#0af}main{padding:20px}footer{display:flex;background-color:#111;color:#fff;padding:20px}button{background-color:#0af;border:none;color:#fff;padding:10px 20px;font-size:1em}button:hover{background-color:#00f}@media (max-width:600px){nav ul{}nav li{margin:10px 0}}section{padding-top:20px;padding-bottom:40px}header img{width:200px;float:left;margin-right:10px}#m_map-container{width:100%;height:800px;overflow:hidden}#m_map{width:100%;height:100%}</style></head><body><u></u>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>The Urban Digital Twins Observatory</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <style>
+ 
+/* Set body font and background color */
+body {
+  font-family: sans-serif;
+  background-color: rgb(49, 49, 49);
+  color: #fff;
+}
+
+/* Create a responsive grid layout */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid > * {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .grid > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid > * {
+    width: 33.3333%;
+  }
+}
+
+/* Style the header and navigation */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 
-  
-  
-  
+nav ul {
+  display: flex;
+  list-style: none;
+}
 
-  
+nav li {
+  margin: 0 10px;
+}
 
-<div>
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #0af;
+}
+
+/* Style the main content */
+main {
+  padding: 20px;
+}
+
+/* Style the footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Add hover effects to buttons */
+button {
+  background-color: #0af;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1em;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #00f;
+}
+
+/* Add responsive design styles */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+header img {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+}
+
+#map-container {
+    width: 100%;
+    height: 800px;
+    overflow: hidden; /* Hide any overflow */
+}
+
+#map {
+    width: 100%; /* Make the map fill the container */
+    height: 100%;
+    top: 5%;
+}
+
+
+
+
+
+  </style>
+</head>
+<body>
     <header>
-        
+        <!-- img src="logo.png" alt="Urban Digital Twin Observatory Logo"> -->
           <h1>The Urban Digital Twin Observatory</h1>
-          <u></u>
+          <nav>
             <ul>
-              <li><a href="#m__about" rel="noreferrer">About</a></li>
-              <li><a href="#m__guide" rel="noreferrer">Guide</a></li>
-              <li><a href="#m__initiaves" rel="noreferrer">Initiatives</a></li>
-              <li><a href="https://www.google.com/url?q=http://globepage.html&amp;source=gmail-html&amp;ust=1673087157130000&amp;usg=AOvVaw3w_O5oDGDnlTGcq5TAPpJj" target="_blank" rel="noreferrer">Globe</a></li>
-              <li><a href="#m__contact" rel="noreferrer">Contact</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#guide">Guide</a></li>
+              <li><a href="#initiaves">Initiatives</a></li>
+              <li><a href="globepage.html">Globe</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-          <u></u>
+          </nav>
         </header>
 
-        <u></u>
-            <section id="m_about">
+        <main>
+            <section id="about">
               <h2>About</h2>
-              
+              <!-- Add content for the About section here -->
               
               <p>
                 What?
@@ -61,53 +199,56 @@
 
              
             </section>
-            <section id="m_guide">
+            <section id="guide">
               <h2>Guide</h2>
-              
+              <!-- Add content for the Team section here -->
               <p>
                 Add steps of the Guide for Implementation here
               </p>
 
             </section>
-            <section id="m_initiatives">
+            <section id="initiatives">
               <h2>Initiatives</h2>
-              
+              <!-- Add content for the Projects section here -->
               <p>
                 Explain the methodology for the data collection and the maturity level assessment
                 Add some images and good practices here
               </p>
 
-            <section id="m_contact">
+            <section id="contact">
 
               <h2>Contact</h2>
-              
+              <!-- Add content for the Contact section here -->
 
               EngD Bruno Ávila Eça de Matos
-              <a href="https://www.google.com/url?q=https://www.linkedin.com/in/brunoavilamatos&amp;source=gmail-html&amp;ust=1673087157130000&amp;usg=AOvVaw18Wz4ou1v2Q_40fm1laMFF" target="_blank" rel="noreferrer"> Profile</a> |
-              E-mail: <a href="mailto:b.avila.eca.de.matos@tue.nl" target="_blank" rel="noreferrer">b.avila.eca.de.matos@tue.nl</a>
+              <a href='https://www.linkedin.com/in/brunoavilamatos' target='_blank'> Profile</a> |
+              E-mail: b.avila.eca.de.matos@tue.nl
 
             </section>
-          <u></u>
+          </main>
           <footer>
-            
+            <!-- Add footer content here -->
 
-            <p>Copyright © 2023 All rights reserved.</p>
-            <p>Contact us: <a href="mailto:info@yourcompany.com" target="_blank" rel="noreferrer">b.avila.eca.de.matos@tue.nl</a></p>
+            <p>Copyright &copy; 2023 All rights reserved.</p>
+            <p>Contact us: <a href='mailto:info@yourcompany.com'>b.avila.eca.de.matos@tue.nl</a></p>
             <p>Follow us:
-              <a href="https://www.google.com/url?q=https://twitter.com/twitter&amp;source=gmail-html&amp;ust=1673087157130000&amp;usg=AOvVaw1bC1XT8gO-WiKQzWNBVdVD" target="_blank" rel="noreferrer">Twitter</a> |
-              <a href="https://www.google.com/url?q=https://facebook.com/facebook&amp;source=gmail-html&amp;ust=1673087157130000&amp;usg=AOvVaw0u2k_AMWzH69Xdx-d4tcZp" target="_blank" rel="noreferrer">Facebook</a> |
-              <a href="https://www.google.com/url?q=https://instagram.com/instagram&amp;source=gmail-html&amp;ust=1673087157130000&amp;usg=AOvVaw0dbnuNnTwHEP4EhuiS0bjj" target="_blank" rel="noreferrer">Instagram</a>
+              <a href='https://twitter.com/twitter' target='_blank'>Twitter</a> |
+              <a href='https://facebook.com/facebook' target='_blank'>Facebook</a> |
+              <a href='https://instagram.com/instagram' target='_blank'>Instagram</a>
             </p>
           </footer>
-        </section></div>
-      
+        </body>
+      </html>
 
 
  
 
 
 
+  <script>
+
   
 
-
-</body></html>
+  </script>
+</body>
+</html>
