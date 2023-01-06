@@ -1,1 +1,254 @@
-Yay, it works
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>The Urban Digital Twins Observatory</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <style>
+ 
+/* Set body font and background color */
+body {
+  font-family: sans-serif;
+  background-color: rgb(49, 49, 49);
+  color: #fff;
+}
+
+/* Create a responsive grid layout */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid > * {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .grid > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid > * {
+    width: 33.3333%;
+  }
+}
+
+/* Style the header and navigation */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #0af;
+}
+
+/* Style the main content */
+main {
+  padding: 20px;
+}
+
+/* Style the footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Add hover effects to buttons */
+button {
+  background-color: #0af;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1em;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #00f;
+}
+
+/* Add responsive design styles */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+header img {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+}
+
+#map-container {
+    width: 100%;
+    height: 800px;
+    overflow: hidden; /* Hide any overflow */
+}
+
+#map {
+    width: 100%; /* Make the map fill the container */
+    height: 100%;
+    top: 5%;
+}
+
+
+
+
+
+  </style>
+</head>
+<body>
+    <header>
+        <!-- img src="logo.png" alt="Urban Digital Twin Observatory Logo"> -->
+          <h1>The Urban Digital Twin Observatory</h1>
+          <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#guide">Guide</a></li>
+              <li><a href="#initiaves">Initiatives</a></li>
+              <li><a href="globepage.html">Globe</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <main>
+            <section id="about">
+              <h2>About</h2>
+              <!-- Add content for the About section here -->
+              
+              <p>
+                What?
+              </p>
+
+              <p>
+                A web portal with urban and spatial digital twins from all over the world. 
+                It features such as search and filters, along as a navigation around the world.
+                It enables contributor to add/correct information in order to keep it updated
+                It includes a page with references to important guidelines, standardization and regulation documents
+                
+              </p>
+
+              <p>
+                Why?
+              </p>
+
+              <p>
+                We want to promote the democratization of the data about digital twins, 
+                provide incentive to regional and local public policies and an overview to researchers and policy-makers
+
+              </p>
+
+              <p>
+                Who?
+              </p>
+
+              <p>
+               The researcher Bruno Ávila Eça de Matos during the Engineering Doctorate program in Smart Buildings and Cities
+               under supervision of Prof. Dr. Bauke de Vries en Dr. Gamze Dane (TU Eindhoven)
+               and Tom van Tilburg (Geodan).
+              </p>
+
+             
+            </section>
+            <section id="guide">
+              <h2>Guide</h2>
+              <!-- Add content for the Team section here -->
+              <p>
+                Add steps of the Guide for Implementation here
+              </p>
+
+            </section>
+            <section id="initiatives">
+              <h2>Initiatives</h2>
+              <!-- Add content for the Projects section here -->
+              <p>
+                Explain the methodology for the data collection and the maturity level assessment
+                Add some images and good practices here
+              </p>
+
+            <section id="contact">
+
+              <h2>Contact</h2>
+              <!-- Add content for the Contact section here -->
+
+              EngD Bruno Ávila Eça de Matos
+              <a href='https://www.linkedin.com/in/brunoavilamatos' target='_blank'> Profile</a> |
+              E-mail: b.avila.eca.de.matos@tue.nl
+
+            </section>
+          </main>
+          <footer>
+            <!-- Add footer content here -->
+
+            <p>Copyright &copy; 2023 All rights reserved.</p>
+            <p>Contact us: <a href='mailto:info@yourcompany.com'>b.avila.eca.de.matos@tue.nl</a></p>
+            <p>Follow us:
+              <a href='https://twitter.com/twitter' target='_blank'>Twitter</a> |
+              <a href='https://facebook.com/facebook' target='_blank'>Facebook</a> |
+              <a href='https://instagram.com/instagram' target='_blank'>Instagram</a>
+            </p>
+          </footer>
+        </body>
+      </html>
+
+
+ 
+
+
+
+  <script>
+
+  
+
+  </script>
+</body>
+</html>
